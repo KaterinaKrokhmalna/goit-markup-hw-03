@@ -139,7 +139,11 @@ text-decoration: none;
         letter-spacing: 0.02em;
         color: var(--white-color);
         max-width: 496px; 
-        
+        margin-left :auto;
+        margin-right :auto;
+       
+  
+      
     }
     .hero-button{
         background-color:var(--primary-brand-color);
@@ -161,6 +165,9 @@ text-decoration: none;
         height: 56px;
         border: none;
         margin-top: 48px;
+        margin-left :auto;
+        margin-right :auto;
+       
     }
     .hero-button:hover,
     .hero-button:focus{
@@ -168,7 +175,7 @@ text-decoration: none;
     }
     .hero{
         padding: 188px 0 188px;
-
+       
     }
 
     .visually-hidden {
