@@ -41,6 +41,7 @@ body{
 .page-header-container{
     display: flex;
     align-items: center;
+    margin: 0 auto;
 
 }
 .page-nav{
@@ -63,6 +64,7 @@ body{
 }
 .menu-nav:not(:last-child){
     margin-right: 40px;
+    padding: 24px 0;
 }
 .logo{
 font-family:var(--secondar-font-family);
@@ -162,7 +164,7 @@ text-decoration: none;
         background-color:var(--pressed-state);
     }
     .hero-wrap{
-        padding: 188px 0 188px
+        padding: 188px 0 188px;
 
     }
     .visually-hidden {
@@ -202,13 +204,17 @@ text-decoration: none;
         }
         .section-text{
             display: flex;
-            flex-basis: calc((100% - 3 * 24px) / 4);
+        
         }
         .card-list:not(:last-child){
     
             margin-right: 24px;
         
         }
+        .card-list{
+        width: calc((100% - 72px) / 4); 
+        }
+        
         .section-work{
             padding-bottom: 120px;
         }
