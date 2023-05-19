@@ -23,10 +23,9 @@ img{
 }
 .container{
     width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto; 
 }
 
 body{
@@ -37,6 +36,7 @@ body{
 .header{
     padding-top: 25.5px;
     padding-bottom: 25.5px;
+    border-bottom: 1px solid #e7e9fc;
 }
 .page-header-container{
     display: flex;
@@ -50,11 +50,13 @@ body{
 .menu{
     display: flex;
     align-items: center;
+    padding: 24px 0 24px;
 
 }
 .menu-address{
     display: flex;
-    align-items: center;  
+    align-items: center;
+    padding: 24px 0 24px;  
 }
 .logo {
     margin-right: 76px;
@@ -131,6 +133,7 @@ text-decoration: none;
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--white-color);
+        max-width: 496px; 
         
     }
     .hero-button{
@@ -148,23 +151,32 @@ text-decoration: none;
         padding-bottom: 16px;
         padding-left: 32px;
         padding-right: 32px;
-        
+        display: block; 
+        min-width: 169px;
+        height: 56px;
+        border: none;
+        margin-top: 48px;
     }
     .hero-button:hover,
     .hero-button:focus{
         background-color:var(--pressed-state);
     }
     .hero-wrap{
-        padding-top: 188px;
-        padding-bottom: 292px;
-        padding-left: 472px;
-        padding-right: 472px;
+        padding: 188px 0 188px
 
     }
-
-
-
-
+    .visually-hidden {
+        position: absolute;
+          white-space: nowrap;
+          width: 1px;
+          height: 1px;
+          overflow: hidden;
+          border: 0;
+          padding: 0;
+          clip: rect(0 0 0 0);
+          clip-path: inset(50%);
+          margin: -1px;
+      }
 
 .section{
     padding-top: 120px;
@@ -190,12 +202,17 @@ text-decoration: none;
         }
         .section-text{
             display: flex;
+            flex-basis: calc((100% - 3 * 24px) / 4);
         }
         .card-list:not(:last-child){
     
             margin-right: 24px;
+        
         }
-
+        .section-work{
+            padding-bottom: 120px;
+        }
+    
     .section-title{
     font-weight: 700;
     font-size: 36px;
@@ -210,15 +227,12 @@ text-decoration: none;
     }
     .cards{
         display: flex;
-    }
-    .section-comand{
-        margin-top: 120px;
-        padding-bottom: 120px; 
-    }
-    .section-title{
-        padding-top: 120px;
        
     }
+    .section-comand{
+        padding: 120px 0 ; 
+    }
+    
     .section-comand{
         background-color: var(--background-light);
     }
@@ -226,25 +240,30 @@ text-decoration: none;
     .list-comand{
         background-color: var(--white-color);
         text-align: center;
+        border-radius: 0px 0px 4px 4px; 
 
     }
     .list-comand:not(:last-child){
     
         margin-right: 24px;
     }
+    .comand-card{
+        padding: 32px 16px 32px;
     
+    }
+    .headline-comand{
+        text-align: center; 
+        margin-bottom: 8px;
+    }
+    .comand-text{
+        text-align: center; 
+    }
 
     .footer-logo{
         color: var(--background-light);
     
     }
-   /**.text kkk{
-        margin-top: 17.5px;
-        margin-bottom: 100px;
-        margin-left: 156px;
-        max-width: 264px;
-    }****/
-
+  
     .footer{
         background-color: var(--dark-text-color);
         font-weight: 400;
@@ -253,12 +272,19 @@ text-decoration: none;
         letter-spacing: 0.02em;
         color:var(--background-light);
         height: 312px;
+        padding: 100px 0;
     }
-     
+    .logo-link{
+        display: inline-block;
+        margin-bottom: 16px;  
+    }
+
+    .footer-text{
+        max-width: 264px;
+    }
 
 
-
-
+/*** portfolio***/
 
 
 
@@ -273,10 +299,44 @@ text-decoration: none;
         line-height: 1.5;
         letter-spacing: 0.04em;
         cursor: pointer;
+        padding: 12px 24px;
     
     }
     .button-filters:hover,
     .button-filters:focus{
         background:var(--pressed-state);
         color:var(--white-color);
+    }
+
+    .button-filters:hover{
+    border: 1px solid transparent;
+    }
+    .button-filters:focus{
+    border: 1px solid transparent;
+    }
+    .filtres{
+        padding: 96px 0 120px;
+    }
+    .section-button{
+        display: flex;
+        justify-content: center; 
+        margin-bottom: 72px;
+        gap: 24px;
+    }
+    .cards-portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 48px;  
+        column-gap: 24px; 
+    }
+    .portfolio-link{
+        width: calc((100% - 48px) / 3); 
+    }
+    .portfolio-text{
+        border: 1px solid #e7e9fc; 
+        border-top: none;
+        padding: 32px 16px;
+    }
+    .portfolio-headline{
+        margin-bottom: 8px;
     }
