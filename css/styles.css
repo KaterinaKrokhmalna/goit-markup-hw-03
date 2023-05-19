@@ -23,9 +23,9 @@ img{
 }
 .container{
     width: 1158px;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
 }
 
 body{
@@ -50,6 +50,7 @@ body{
 .menu{
     display: flex;
     align-items: center;
+    padding: 24px 0 24px;
 
 }
 .menu-address{
@@ -62,9 +63,10 @@ body{
 .menu-nav:not(:last-child){
     margin-right: 40px;
 }
-.menu-nav{
+/***.menu-nav{
     padding: 24px 0 24px;
-}
+}***/
+
 .logo{
 font-family:var(--secondar-font-family);
 font-weight: 800;
@@ -217,6 +219,9 @@ text-decoration: none;
 
         .section-work{
             padding-bottom: 120px;
+        
+        }
+        .card-imag{
             width: calc((100% - 48px) / 3);
         }
     
