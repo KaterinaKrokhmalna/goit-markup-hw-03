@@ -50,7 +50,6 @@ body{
 .menu{
     display: flex;
     align-items: center;
-    padding: 24px 0 24px;
 
 }
 .menu-address{
@@ -101,6 +100,9 @@ text-decoration: none;
 .list-nav:hover,
 .list-nav:focus{
        color:var(--pressed-state);
+    }
+    .list-nav{
+        padding: 24px 0 24px;  
     }
     .address{
         font-style: normal;
