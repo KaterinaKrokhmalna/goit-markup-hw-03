@@ -23,7 +23,8 @@ img{
 }
 .container{
     width: 1158px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -62,9 +63,7 @@ body{
 .menu-nav:not(:last-child){
     margin-right: 40px;
 }
-/***.menu-nav{
-    padding: 24px 0 24px;
-}***/
+
 
 .logo{
 font-family:var(--secondar-font-family);
@@ -95,7 +94,6 @@ text-decoration: none;
     color: var(--dark-text-color);
 
 }
-
 
 .list-nav:hover,
 .list-nav:focus{
